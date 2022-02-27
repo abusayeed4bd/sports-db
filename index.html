@@ -11,21 +11,32 @@
 </head>
 
 <body>
-    <div class="container w-100 m-auto">
+    <div class="container w-100 mx-auto">
         <div class="row w-100 m-auto">
             <div class="col-md-6  m-auto text-center">
                 <h2>left side</h2>
-                <div class="input-group">
-                    <div class="form-outline">
-                        <input type="search" id="search-box" class="form-control" placeholder="Search player here" />
+                <div class="mx-auto">
+                    <div class="input-group w-100 mx-auto">
+                        <div class="input-group mb-3">
+                            <input id="search-box" type="text" class="form-control" placeholder="Recipient's username"
+                                aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <button onclick="allPlayers()" class="btn btn-outline-secondary" type="button"
+                                id="search-btn">Search</button>
+                        </div>
+
+
                     </div>
-                    <button onclick="allPlayers()" id="search-btn" type="button" class="btn btn-primary">
-                        Search
-                    </button>
+                </div>
+                <div class="player-container" id="player-container">
+
                 </div>
             </div>
-            <div class="col-md-6  m-auto text-center">
+            <div class="col-md-6   text-center">
                 <h2>right side</h2>
+
+                <div id="details-container">
+
+                </div>
             </div>
         </div>
     </div>
